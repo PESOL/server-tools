@@ -66,7 +66,7 @@ After the first run, you'll find a file called ``domain.crt`` in
 
 .. image:: https://odoo-community.org/website/image/ir.attachment/5784_f2813bd/datas
     :alt: Try me on Runbot
-    :target: https://runbot.odoo-community.org/runbot/149/8.0
+    :target: https://runbot.odoo-community.org/runbot/149/10.0
 
 For further information, please visit:
 
@@ -140,6 +140,7 @@ Contributors
 * Antonio Espinosa <antonio.espinosa@tecnativa.com>
 * Dave Lasley <dave@laslabs.com>
 * Ronald Portier <ronald@therp.nl>
+* Angel Moya <angel.moya@pesol.es>
 
 ACME implementation
 -------------------
