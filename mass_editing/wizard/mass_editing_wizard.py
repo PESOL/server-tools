@@ -232,8 +232,8 @@ class MassEditingWizard(models.TransientModel):
             result['fields'] = all_fields
         return result
 
-    @api.model
-    def create(self, vals):
+
+    def mass_edit(self, vals):
         if (self._context.get('active_model') and
                 self._context.get('active_ids')):
             model_obj = self.env[self._context.get('active_model')]
@@ -254,7 +254,7 @@ class MassEditingWizard(models.TransientModel):
                         values.update({split_key: m2m_list})
             if values:
                 model_obj.browse(self._context.get('active_ids')).write(values)
-        return super(MassEditingWizard, self).create({})
+        # return model_obj.browse(self._context.get('active_ids'))
 
     @api.multi
     def action_apply(self):
